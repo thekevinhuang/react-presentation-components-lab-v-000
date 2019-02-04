@@ -5,8 +5,21 @@ export default class SimpleComponent extends Component {
   constructor () {
     super()
     this.state = {
-      mood = "happy"
+      mood : "happy"
     }
+  }
+
+  handleClick = (event) => {
+    if(this.state.mood === "happy") {
+      this.setState({
+        mood : "sad"
+      })
+    } else {
+      this.setState({
+        mood : "happy"
+      })
+    }
+    
   }
 
   render () {
