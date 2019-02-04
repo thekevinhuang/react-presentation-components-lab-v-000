@@ -1,5 +1,5 @@
 // Code SimplerComponent Here
 const SimplerComponent = (props) =>
-  <div onClick={this.props.handleClick}>
+  <div>
     I am just happy
   </div>
